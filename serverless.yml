@@ -8,6 +8,10 @@ provider:
   stage: api
   region: ca-central-1
   lambdaHashingVersion: 20201221
+  ecr:
+    images:
+      captcha-audio:
+        path: ./captcha-audio
 
 package:
   individually: true
@@ -20,6 +24,15 @@ plugins:
   - serverless-plugin-include-dependencies
 
 functions:
+  captchaAudio:
+    image:
+      name: captcha-audio
+    events:
+      - http:
+          method: POST
+          path: /captcha/audio
+          cors: true
+
   ###########
   # config
   ###########
@@ -119,6 +132,8 @@ custom:
       noStart: true
       seed: true
       migrate: true
+  serverless-offline:
+    useDocker: true
 
 resources:
   Resources:

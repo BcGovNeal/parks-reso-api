@@ -1,0 +1,17 @@
+{
+  "name": "parks-captcha-audio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@suldashi/lame": "^1.2.5",
+    "arraybuffer-to-buffer": "^0.0.7",
+    "node-jose": "^2.0.0",
+    "streamifier": "^0.1.1",
+    "text2wav": "^0.0.13",
+    "wav": "^1.0.2"
+  }
+}

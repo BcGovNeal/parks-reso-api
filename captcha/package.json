@@ -1,0 +1,14 @@
+{
+  "name": "parks-captcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "node-jose": "^2.0.0",
+    "svg-captcha": "^1.4.0"
+  }
+}

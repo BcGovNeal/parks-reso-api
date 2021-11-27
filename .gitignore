@@ -2,4 +2,11 @@ node_modules/
 *.lock.hcl
 *.DS_Store
 
+**/package-lock.json
+
 artifacts
+
+captcha/lib
+captcha/tests/test.html
+captcha/.env
+captcha/logs

@@ -4,6 +4,7 @@
   "description": "parks-reso-api",
   "dependencies": {
     "axios": "^0.24.0",
+    "bcparks-captcha": "file:captcha",
     "jsonwebtoken": "^8.5.1",
     "jwks-rsa": "^2.0.5"
   },
